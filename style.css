@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;  /* A light background colour*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
+    margin: 0;   /* Remove default body margin */
+    
+}
+
+.qr-container{
+    background-color: hsl(0, 0%, 100%);  /* Color given on style-guide for the container */
+    border-radius: 10px;   /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);  /* Subtle shadow for depth*/
+    padding: 20px;
+    width: 300px;   /* Adjust width as needed */
+    text-align: center;  /* Center the content within the container*/
+      
+}
+
+
+.qr-code{
+    
+   margin-bottom: 15px;  /* Space between the qr-code and text*/
+   
+}
+
+.qr-code img{
+    max-width: 100%;   /* Ensures the image doesn't exceed the container width*/
+    height: auto;   /* Maintain aspect ratio */
+    border-radius: 5px; /* Slightly round the corners of the qr-code */
+    
+}
+
+
+.text-content h1{
+   font-size: 1.2em;
+    color:#333;  /* Dark gray heading text */
+    margin-top: 0;  /* Remove default top margin for the heading */
+    margin-bottom: 10px;
+}
+
+
+.text-content p{
+    font-size: 0.9em;
+    color: hsl(216, 15%, 48%);  /* Gray paragraph text */
+    line-height: 1.5;  /* Improve readability */
+    margin-bottom: 0;  /* Remove default bottom margin for the paragraph */
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+@media (max-width:375px){
+    .card-container{
+        flex-direction: column;
+
+    }
+}
